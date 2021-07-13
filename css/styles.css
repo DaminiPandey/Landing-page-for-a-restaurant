@@ -1,0 +1,297 @@
+body{
+ background-color: #eee;
+
+}
+.container{
+  height: 100vh;
+  display: grid;
+  background-color: #eee;
+    grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 10px;
+
+
+}
+.cont-2 h1{
+  font-family: serif;
+}
+
+.nested{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column:2/4;
+  column-gap: 20px;
+}
+.cont-1{
+  grid-row: 1/3;
+  padding-top: 5rem;
+}
+.cont-1 h3{
+  padding-left: 2rem;
+}
+.cont-1 a{
+  text-decoration: none;
+  color: black;
+}
+.cont-1 li{
+  margin-top: 2rem;
+  list-style-type: none;
+  margin-left: 0;
+
+}
+.cont-2{
+  padding-top: 8.5rem;
+  height: 250px;
+}
+.cont-3{
+  padding-top: 8rem;
+  height: 250px;
+}
+.cont-3 hr{
+  width: 30%;
+  border-top: 3px solid red;
+}
+.cont-2 h1{
+  font-size: 3.7rem;
+  line-height: 4rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.cont-1 h3{
+  font-weight: bold;
+}
+.cont-4 img{
+  width: 120px;
+  height: 120px;
+ border-radius: 55%;
+  width: 8rem;
+
+}
+.cont-4 div{
+  border: 1px solid #fff;
+  border-radius: 10%;
+  text-align: center;
+  padding: 0.8rem;
+  background-color: #fff;
+   box-shadow: 13px 13px 5px #DDDDDD;
+   height: 200px;
+
+}
+.cont-4 p{
+   margin-top: 1.5rem;
+}
+.cont-1 .cart{
+  margin-left: 2rem;
+  margin-top: 3rem;
+  width: 7rem;
+  height: 2.4rem;
+  border-radius: 25px;
+  border: none;
+  background-color: #DA0037;
+  color: #fff;
+}
+.cont-1 a:hover{
+  text-decoration: line-through;
+  text-decoration-color:  #DA0037;
+}
+.cont-1 a:active{
+  text-decoration: line-through;
+  text-decoration-color:  #DA0037;
+}
+
+.cont-1 .dropbtn{
+  display: none;
+}
+.cont-1 .drop {
+  float: left;
+  overflow: hidden;
+}
+.cont-1 .drop .dropbtn {
+  border: none;
+  outline: none;
+  color:  #DA0037;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.cont-1 .drop-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+ .cont-1 .drop-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.cont-1 .drop-content a:hover {
+  background-color: #ddd;
+  color: black;
+  text-decoration: line-through;
+  text-decoration-color:  #DA0037;
+}
+.cont-1 i{
+  display: none;
+}
+
+@media only screen and (min-width:1440px) {
+  .nested{
+    height: 180px;
+  }
+  .cont-1 h3{
+     font-size: 2.5rem;
+     padding-bottom: 2rem;
+  }
+  .cont-1{
+    padding-top: 7rem;
+  }
+  .cont-1 li{
+    margin-top: 3rem;
+
+  }
+  .cont-2 h1{
+    font-size: 4rem;
+    line-height: 6.4rem;
+  }
+  .cont-2{
+    padding-top: 14rem;
+  }
+  .cont-3{
+  width: 67%;
+  margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width:414px) and (max-height:896px) {
+.container{
+  display: grid;
+  height: 100vh;
+
+
+  grid-auto-columns: 1fr;
+  grid-template-rows: 1fr 2fr 4fr 2fr;
+  grid-template-areas:
+  "cont-1"
+  "cont-2"
+  "cont-4"
+  "cont-3"
+}
+.cont-1{
+    grid-area: cont-1;
+}
+.cont-2{
+    grid-area: cont-2;
+}
+.cont-3{
+    grid-area: cont-3;
+}
+.cont-4{
+    grid-area: cont-4;
+}
+.container nav ul{
+  display: none;
+}
+.container .dropbtn {
+  display: block;
+  color: #DA0037 !important;
+  width: 3rem;
+  font-size: 2rem;
+  width: 7rem;
+
+
+}
+.container .cart{
+  display: none;
+}
+.cont-1 .dropbtn:hover .drop-content{
+  display: block;
+  visibility:visible;
+
+
+}
+.cont-1 span{
+  display: none;
+}
+.cont-1 h3{
+  text-align: center;
+  font-size: 2rem;
+  margin-right: 6rem;
+  padding-top: 1rem;
+}
+.cont-1{
+ padding-top: 2rem;
+}
+
+.cont-2 {
+  width: 100%;
+  height: 400px;
+  text-align: left;
+  padding-bottom: 9rem;
+}
+.cont-2 h1{
+  font-size: 2.6rem;
+  line-height: 3rem;
+  padding-left: 1rem;
+}
+.nested{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.cont-2{
+  height: 300px;
+}
+.nested .img-4{
+  display: none;
+}
+.cont-4 div{
+  margin:1rem;
+}
+.cont-3{
+ width: 90%;
+height: 260px;
+  margin-bottom: 2rem;
+overflow: none;
+position: relative;
+
+ margin-left: 1rem;
+}
+.cont-3 p{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-top: 0;
+ word-break: break-all;
+ position: absolute;
+ top:2.6rem;
+
+}
+.cont-3 hr{
+  padding-bottom: 3rem;
+
+}
+.cont-1 a{
+  color: inherit;
+}
+.cont-1 .drop {
+  position: relative;
+  display: inline-block;
+}
+.cont-1{
+  position: relative;
+}
+.cont-1 i{
+ display: block;
+ position: absolute;
+ right: 2rem;
+ top:3.5rem;
+ color:#DA0037;
+
+}
+
+}
